@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://devesh007suii.github.io/Mealf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
