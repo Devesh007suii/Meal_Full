@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Mealf/static/css/main.3c06b806.css",
+    "main.js": "/Mealf/static/js/main.b4f0f715.js",
+    "index.html": "/Mealf/index.html",
+    "main.3c06b806.css.map": "/Mealf/static/css/main.3c06b806.css.map",
+    "main.b4f0f715.js.map": "/Mealf/static/js/main.b4f0f715.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c06b806.css",
+    "static/js/main.b4f0f715.js"
+  ]
+}
