@@ -68,10 +68,11 @@ const Calen = () => {
 
   async function findDate() {
 
-    const url = "http://localhost:8000/mealtime";
+    const url = "/Dates.json";
     const response = await fetch(url) //await is because we are waitiing to fetch 
     // and fetch means it will take all the information from url
     const datapoints = await response.json();
+    console.log(datapoints)
 
     //const d=date.toISOString();
     const d1 = date.toString();
@@ -156,7 +157,7 @@ const Calen = () => {
       let f = 0
       let g = 0
       let h = 0;
-      var m = datapoints.map((index) => {
+      var m = datapoints.mealtime.map((index) => {
         let rr = index.item_date;
         let year = rr.slice(0, 4);
         let month = rr.slice(5, 7);
