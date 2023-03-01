@@ -31,8 +31,10 @@ ChartJS.register(
 
 
 const Calen = () => {
-
-  const [date, setDate] = useState(new Date());
+  //2021-05-18 12:39:29
+  const d=new Date("Tue May 18 2021")
+  
+  const [date, setDate] = useState(d);
 
   const onChange = date => {
     setDate(date);
