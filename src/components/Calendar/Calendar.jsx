@@ -40,7 +40,7 @@ const Calen = () => {
     setDate(date);
   }
 
-  const [valuesOFMonths, setValuesOFMonths] = useState('');
+  const [valuesOfDay, setValuesOfDay] = useState('');
   const [months, setMonths] = useState("")
   const [e1, setf1] = useState([]);
   const [e2, setf2] = useState([]);
@@ -53,13 +53,10 @@ const Calen = () => {
     datasets: [
       {
         label: "Mealful",
-        data: valuesOFMonths,
+        data: valuesOfDay,
         backgroundColor: "black",
         borderColor: "orange",
         borderWidth: 3,
-
-
-
       }
     ]
   }
@@ -387,7 +384,7 @@ const Calen = () => {
               a++;
 
             }
-            else if (time > 13 && time <= 6) {
+            else if (time > 3 && time <= 6) {
               b++;
 
             }
@@ -425,7 +422,7 @@ const Calen = () => {
 
       finalArr.push(q);
       dayyy.push(day1);
-      day1 = day1 - 1;
+      day1--;;
 
 
       aa.push(a);
@@ -446,7 +443,8 @@ const Calen = () => {
     let f3 = [aa[2], bb[2], cc[2], dd[2], ee[2], ff[2], gg[2], hh[2]];
 
 
-    setValuesOFMonths(finalArr);
+
+    setValuesOfDay(finalArr);
     setMonths(dayyy);
     setf1(f1);
     setf2(f2);
@@ -481,7 +479,7 @@ const Calen = () => {
   return (
     
 
-    <div style={{margin: 0, border: 0, padding: 0}} >
+    <div>
       <Heading m={"12"} textAlign={"center"}  children="Making Eating Well Affordable And Easy" />
       <HStack m={"9"}>
         <Box onClick={() => findDate()} boxShadow={"2xl"} mx={40}>
